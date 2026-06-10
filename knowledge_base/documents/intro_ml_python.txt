@@ -1,0 +1,30 @@
+Introduction to Machine Learning with Python — Curated Knowledge Base Excerpts
+
+Scikit-learn Fundamentals
+Scikit-learn provides a consistent API: fit, predict, transform. Estimators learn from data; transformers modify feature matrices; predictors output labels or scores. Pipelines chain preprocessing and modeling steps to prevent data leakage.
+
+Data Representation
+Features should be numeric matrices (n_samples, n_features). Categorical variables require encoding (OneHotEncoder, OrdinalEncoder). Missing values are imputed or encoded explicitly. Text data uses CountVectorizer or TfidfVectorizer.
+
+Model Selection Workflow
+Use GridSearchCV or RandomizedSearchCV with cross-validation to tune hyperparameters. Pipeline objects ensure preprocessing is fit only on training folds. Always hold out a final test set untouched during tuning.
+
+Supervised Models in Practice
+Linear models (LogisticRegression, Ridge, Lasso) provide strong baselines. Tree-based models (DecisionTree, RandomForest, GradientBoosting) capture non-linear interactions. SVMs with RBF kernels work well on medium-sized tabular datasets.
+
+Unsupervised Learning
+PCA and NMF reduce dimensionality. KMeans and DBSCAN cluster unlabeled data. Manifold learning methods visualize structure. Unsupervised preprocessing can improve downstream supervised tasks.
+
+Model Evaluation with sklearn
+classification_report summarizes precision, recall, and F1 per class. confusion_matrix reveals error patterns. learning_curve and validation_curve diagnose bias, variance, and data sufficiency.
+
+Feature Selection
+SelectKBest, RFE, and model-based selection (L1, tree importances) reduce dimensionality and improve interpretability. Selection must occur inside cross-validation pipelines.
+
+Handling Imbalanced Data
+class_weight='balanced', oversampling (SMOTE), or adjusting decision thresholds improve minority class detection. Evaluation should prioritize recall or F1 for critical positive classes.
+
+MLOps Basics with Python
+Serialize models with joblib or pickle. Track experiments with MLflow. Containerize inference services with FastAPI. Monitor prediction drift and retrain on schedule.
+
+Role relevance: ml_engineer, data_scientist

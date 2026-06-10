@@ -1,0 +1,30 @@
+Machine Learning — Tom Mitchell (Curated Knowledge Base Excerpts)
+
+Supervised Learning
+Supervised learning involves learning a function that maps input instances to output labels using labeled training data. Mitchell defines the learner's goal as approximating the target concept given a finite sample. Key components include hypothesis space, training error, and generalization to unseen examples. Decision trees, neural networks, and support vector machines are canonical hypothesis classes discussed in the text.
+
+Concept Learning and Version Space
+Concept learning can be framed as finding a hypothesis consistent with training examples. The version space is the subset of hypotheses that classify all training examples correctly. Candidate elimination tracks boundary hypotheses (most general and most specific) to represent the version space.
+
+Decision Tree Learning
+Decision trees recursively partition the feature space using attribute tests that maximize information gain. Mitchell emphasizes information gain as reduction in entropy: Gain(S,A) = Entropy(S) - sum(|Sv|/|S| * Entropy(Sv)). Overfitting is addressed via pruning and validation sets.
+
+Neural Networks and Backpropagation
+Multilayer networks learn distributed representations. Backpropagation computes gradients via the chain rule, enabling gradient descent over hidden layers. Mitchell discusses representational power, local minima, and the importance of network architecture and learning rate selection.
+
+Bayesian Learning
+Bayesian methods combine prior beliefs with observed data to compute posterior distributions over hypotheses. Maximum a posteriori (MAP) and maximum likelihood estimation provide point estimates. Naive Bayes assumes conditional independence of features given the class label.
+
+Instance-Based Learning
+k-Nearest Neighbor stores training instances and classifies new points by majority vote among k closest neighbors. Mitchell highlights lazy learning, sensitivity to distance metrics, and curse of dimensionality.
+
+Genetic Algorithms
+Genetic algorithms evolve populations of hypotheses via selection, crossover, and mutation. Fitness functions guide search in complex hypothesis spaces where gradient methods are inapplicable.
+
+Inductive Logic Programming
+ILP learns logical rules from examples, integrating symbolic reasoning with statistical learning. Mitchell positions ILP as important for relational data and structured knowledge.
+
+Bias-Variance and Model Selection
+Learners exhibit bias (systematic error from restrictive hypotheses) and variance (sensitivity to training sample). Model selection balances complexity against data quantity. Cross-validation estimates generalization performance for hyperparameter tuning.
+
+Role relevance: ml_engineer, ml_researcher, data_scientist

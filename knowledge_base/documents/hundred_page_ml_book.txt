@@ -1,0 +1,30 @@
+The Hundred-Page Machine Learning Book — Curated Knowledge Base Excerpts
+
+Model Evaluation
+Train-validation-test splits prevent optimistic bias. k-fold cross-validation rotates held-out folds to stabilize performance estimates. Metrics must match the problem: accuracy for balanced classification, precision/recall/F1 for imbalanced data, RMSE/MAE for regression.
+
+Regularization
+L1 (Lasso) promotes sparsity by penalizing absolute coefficients; L2 (Ridge) shrinks coefficients smoothly. Elastic Net combines both penalties. Regularization combats overfitting when feature dimensionality is high relative to sample size.
+
+Feature Engineering
+Transform raw inputs into informative representations: scaling, encoding categoricals, polynomial features, binning, and domain-specific derivations. Good features often outperform complex models on modest datasets.
+
+Ensemble Methods
+Bagging reduces variance by averaging models trained on bootstrap samples (Random Forest extends this with feature subsampling). Boosting reduces bias by sequentially fitting weak learners to residual errors (AdaBoost, Gradient Boosting, XGBoost).
+
+Gradient Descent and Optimization
+Batch, stochastic, and mini-batch gradient descent trade convergence stability against update frequency. Learning rate schedules and momentum accelerate convergence. Convex losses guarantee global optima; non-convex deep models require careful initialization.
+
+Classification and SVMs
+Support Vector Machines maximize the margin between classes. Kernel tricks map inputs to higher dimensions for non-linear separation. Soft-margin SVMs tolerate misclassification via slack variables.
+
+Clustering
+k-Means partitions data by minimizing within-cluster variance. Hierarchical clustering builds dendrograms via agglomerative or divisive strategies. DBSCAN discovers clusters of arbitrary shape using density connectivity.
+
+Dimensionality Reduction
+PCA finds orthogonal directions of maximum variance. t-SNE and UMAP visualize high-dimensional structure in 2D/3D for exploratory analysis.
+
+Practical ML Pipeline
+A production pipeline chains preprocessing, feature extraction, model training, validation, and deployment. Reproducibility requires versioned data, code, and model artifacts.
+
+Role relevance: ml_engineer, data_scientist, ai_engineer

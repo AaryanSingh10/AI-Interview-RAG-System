@@ -1,0 +1,24 @@
+Alex Chen
+alex.chen@email.com
+
+SUMMARY
+Machine Learning Engineer with 4 years of experience building production ML pipelines, model serving APIs, and data processing workflows.
+
+SKILLS
+Python, scikit-learn, TensorFlow, PyTorch, pandas, numpy, SQL, Docker, Kubernetes, AWS, FastAPI, feature engineering, cross-validation, hyperparameter tuning, deep learning, NLP, embeddings
+
+EXPERIENCE
+ML Engineer | TechCorp | 2021 - Present
+- Built scikit-learn and XGBoost pipelines for fraud detection with 94% precision
+- Deployed model serving APIs using FastAPI and Docker on AWS ECS
+- Implemented feature stores and MLflow experiment tracking
+
+Data Scientist | DataStart | 2019 - 2021
+- Developed classification models for customer churn prediction
+- Created EDA dashboards and A/B test analysis frameworks
+
+EDUCATION
+M.S. Computer Science, Stanford University
+B.S. Mathematics, UC Berkeley
+
+4 years of experience in machine learning and software engineering.

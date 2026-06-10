@@ -1,0 +1,30 @@
+Pattern Recognition and Machine Learning — Bishop (Curated Knowledge Base Excerpts)
+
+Probability and Decision Theory
+Pattern recognition formalizes inference under uncertainty. Bayes' theorem combines prior p(theta) with likelihood p(D|theta) to obtain posterior p(theta|D). Decision theory selects actions minimizing expected loss.
+
+Linear Models for Regression
+Linear regression with Gaussian noise yields closed-form maximum likelihood solutions. Regularized variants (Ridge) correspond to Gaussian priors on weights. Bayesian linear regression provides predictive distributions, not just point estimates.
+
+Classification and Generative Models
+Generative classifiers model class-conditional densities p(x|C) and priors p(C). Discriminative models directly model p(C|x). Logistic regression is a discriminative model with log-linear decision boundaries.
+
+Neural Networks
+Neural networks compose nonlinear transformations. Bishop discusses activation functions, universal approximation, and Bayesian treatments of network weights. Early stopping and weight decay act as regularizers.
+
+Kernel Methods
+Kernel functions implicitly map data to feature spaces where linear methods suffice. Gaussian processes provide non-parametric Bayesian regression with uncertainty estimates. RVM (Relevance Vector Machine) yields sparse kernel models.
+
+Graphical Models
+Directed (Bayesian networks) and undirected (Markov random fields) models encode conditional independence. Inference algorithms include belief propagation and variational methods.
+
+Variational Inference and EM
+The EM algorithm maximizes likelihood for models with latent variables by alternating expectation and maximization steps. Variational inference approximates intractable posteriors with simpler distributions.
+
+Sampling Methods
+MCMC (Metropolis-Hastings, Gibbs) draws samples from complex posteriors. Sampling enables Bayesian model averaging and uncertainty quantification.
+
+Learning Theory
+PAC learning and VC dimension characterize generalization bounds. Bishop connects capacity control, regularization, and Bayesian evidence to prevent overfitting.
+
+Role relevance: ml_researcher, ml_engineer
